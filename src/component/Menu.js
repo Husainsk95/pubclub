@@ -41,9 +41,9 @@ export const Menu = () => {
                             title="COMMUNITY"
                             id={`offcanvasNavbarDropdown-expand-${expand}`}
                         >
-                            <NavDropdown.Item to="advisorycounciling">ADVISORY COUNCIL</NavDropdown.Item>
+                            <NavDropdown.Item > <NavLink to="advisorycounciling">ADVISORY COUNCIL</NavLink></NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item to="members">MEMBERS</NavDropdown.Item>
+                            <NavDropdown.Item ><NavLink to="members">MEMBERS</NavLink></NavDropdown.Item>
                         </NavDropdown>
 
                         <NavLink className='mobile' to="advisorycounciling">ADVISORY COUNCIL</NavLink>
