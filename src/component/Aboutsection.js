@@ -25,11 +25,11 @@ const Aboutsection = () => {
         <Container className='mb-5 pb-5'>
           <Row>
             <Col className='col-md-6 top-margin'>
-              <img src={img1} alt='Mission Image' />
+              <img src={img1} alt=" " />
               <p className='section-para mt-5'>To offer industry insights through the lens of key decision-makers, while empowering creators to actively uplift the Ad Tech ecosystem.</p>
             </Col>
             <Col className='col-md-6'>
-              <img src={img2} alt='Mission Image' />
+              <img src={img2} alt=" " />
             </Col>
           </Row>
         </Container>
