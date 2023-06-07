@@ -65,7 +65,7 @@ const Aboutsection = () => {
                   <img
                     className="d-block"
                     src={img8}
-                    alt="First slide"
+                    alt=" "
                   />
 
                 </Carousel.Item>
@@ -73,7 +73,7 @@ const Aboutsection = () => {
                   <img
                     className="d-block"
                     src={img9}
-                    alt="Second slide"
+                    alt=" "
                   />
 
                 </Carousel.Item>
@@ -81,14 +81,14 @@ const Aboutsection = () => {
                   <img
                     className="d-block"
                     src={img10}
-                    alt="Third slide"
+                    alt=" "
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="d-block"
                     src={img11}
-                    alt="Third slide"
+                    alt=" "
                   />
                 </Carousel.Item>
               </Carousel>
