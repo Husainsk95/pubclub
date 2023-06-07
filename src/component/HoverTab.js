@@ -96,19 +96,19 @@ const HoverTab = (props) => {
                     ))}       */}
 
                             { data.map((d) => {
-                                 return (
+                                return (
                                     <>
-                                    <div className= {activeTab === d.tabname ? "tablinks active" : "tablinks"} onMouseOver={()=>{setActiveTab(d.tabname)}}>
-                                    <div className="d-flex tab-box ">
-                                        <div className=" tabimg py-4">
-                                            {activeTab === d.tabname ? <img src={d.tabhoverimg} alt="..." /> : <img src={d.tabimg} alt="..." /> }
-                                        </div>
-                                        <div className="tab-text py-4 ms-5">
-                                            <h3 className='tab-heading'>{d.tabheading}</h3>
+                                    <div key={d.id} className= {activeTab === d.tabname ? "tablinks active" : "tablinks"} onMouseOver={()=>{setActiveTab(d.tabname)}}>
+                                        <div className="d-flex tab-box ">
+                                            <div className=" tabimg py-4">
+                                                {activeTab === d.tabname ? <img src={d.tabhoverimg} alt="..." /> : <img src={d.tabimg} alt="..." /> }
+                                            </div>
+                                            <div className="tab-text py-4 ms-5">
+                                                <h3 className='tab-heading'>{d.tabheading}</h3>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                </>
+                                    </>
                                  )})
                               }
 
@@ -166,7 +166,7 @@ const HoverTab = (props) => {
                          { data.map((d) => {
                             return (
                              <>
-                                <div className={activeTab === d.tabname ? "tabcontent active" : "tabcontent"}>
+                                <div key={d.id} className={activeTab === d.tabname ? "tabcontent active" : "tabcontent"}>
                                    <img src={d.tabcontentimg} alt="..." />
                                 </div>
                              </>
