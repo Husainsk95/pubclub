@@ -1,17 +1,11 @@
 import React from 'react'
 import './advisoryheader.css'
-import { Container, Row, Col } from 'react-bootstrap'
-import Menu from './Menu'
+import { Container, Row } from 'react-bootstrap'
 
 const AdvisoryHeader = () => {
   return (
     <>
       <section className='advisory-council'>
-        <Container fluid>
-          <Row>
-            <Menu />
-          </Row>
-        </Container>
         <Container fluid className='advisory'>
           <Row>
             <h1 className='advisory-heading'>ADVISORY COUNCIL</h1>

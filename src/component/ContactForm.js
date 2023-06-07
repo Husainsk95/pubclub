@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Row, Col, Container } from 'react-bootstrap';
-import { Formik, Form, useField, ErrorMessage } from "formik";
+import { Formik, Form } from "formik";
+// import { Formik, Form, useField, ErrorMessage } from "formik";
 
 // import { object, string, ref } from "yup";
 import './contactform.css';
@@ -20,28 +21,28 @@ import './contactform.css';
 
 
 
-  const Input = ({ name, label, ...props }) => {
-    const [field, meta] = useField(name);
-    return (
-      <div className="mb-4">
-        <label className="block text-gray-700 text-sm font-bold" for={field.name}>
-          {label}
-        </label>
-        <input
-          className={`${
-            meta.error && meta.touched ? "border-red-500" : ""
-          } shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline`}
-          {...field}
-          {...props}
-        />
-        <ErrorMessage
-          name={field.name}
-          component="div"
-          className="text-red-500 text-xs"
-        />
-      </div>
-    );
-  };
+  // const Input = ({ name, label, ...props }) => {
+  //   const [field, meta] = useField(name);
+  //   return (
+  //     <div className="mb-4">
+  //       <label className="block text-gray-700 text-sm font-bold" for={field.name}>
+  //         {label}
+  //       </label>
+  //       <input
+  //         className={`${
+  //           meta.error && meta.touched ? "border-red-500" : ""
+  //         } shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline`}
+  //         {...field}
+  //         {...props}
+  //       />
+  //       <ErrorMessage
+  //         name={field.name}
+  //         component="div"
+  //         className="text-red-500 text-xs"
+  //       />
+  //     </div>
+  //   );
+  // };
   
 
 const ContactForm = () => {

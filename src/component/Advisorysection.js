@@ -11,7 +11,7 @@ const Advisorysection = () => {
                     <Row>
                         <Col className='col-md-3'>
                             <div>
-                                <img src={img1} alt='Image Cant Load' />
+                                <img src={img1} alt=" " />
                                 <h4 className='advsection-heading mt-5'>Timmy Bankole</h4>
                                 <p className='advsection-subheading'>Director, Advertising Business Operations at South China </p>
                                 <p className='advsection-subheading mt-para'>Marketing Post</p>
@@ -27,7 +27,7 @@ const Advisorysection = () => {
                     <Row>
                         <Col className='col-md-3'>
                             <div>
-                                <img src={img1} alt='Image Cant Load' />
+                                <img src={img1} alt=" " />
                                 <h4 className='advsection-heading mt-5'>Timmy Bankole</h4>
                                 <p className='advsection-subheading'>Director, Advertising Business Operations at South China</p>
                                 <p className='advsection-subheading mt-para'>Marketing Post</p>

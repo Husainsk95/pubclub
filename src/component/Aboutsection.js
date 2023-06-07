@@ -43,11 +43,11 @@ const Aboutsection = () => {
                 <Col className='col-md-1'></Col>
                 <Col className='col-md-10 mt-5 pt-4 pb-5 mb-5'><div className='list'>
                   <ul className='about-list'>
-                    <li><img src={img3} alt='news image' /><h4>news</h4></li>
-                    <li><img src={img4} alt='media image' /> <h4>media</h4></li>
-                    <li><img src={img5} alt='entertainment image' /> <h4>entertainment</h4></li>
-                    <li className='pt-3'><img src={img6} alt='gaming image' /> <h4>gaming</h4></li>
-                    <li className='pt-3'><img src={img7} alt='ott image' /> <h4>OTT</h4></li>
+                    <li><img src={img3} alt="" /><h4>news</h4></li>
+                    <li><img src={img4} alt=" " /> <h4>media</h4></li>
+                    <li><img src={img5} alt=" " /> <h4>entertainment</h4></li>
+                    <li className='pt-3'><img src={img6} alt=" " /> <h4>gaming</h4></li>
+                    <li className='pt-3'><img src={img7} alt=" " /> <h4>OTT</h4></li>
                   </ul>
                 </div></Col>
                 <Col className='col-md-1'></Col>
@@ -105,7 +105,7 @@ const Aboutsection = () => {
                    <p className='slider-para'>We aspire to constructively challenge the status quo and establish</p>
                    <p className='slider-para'>emerging markets as a defining entity in the ad tech space.</p>
                    </div>
-                   <img src={headright} alt='right-capsule' />
+                   <img src={headright} alt=" " />
                 </div>
             </Container>
           </Row>

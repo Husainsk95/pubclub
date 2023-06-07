@@ -184,7 +184,7 @@ const Meet = () => {
                     
                     <div className='img-expand full' >
                       <img src={img1} className="img-expand1"  onMouseOver={MouseOver}  alt='' />
-                      <div className='arrow'><a href=""><img src={img_redirect} alt='' /></a></div>
+                      <div className='arrow'><a href="/"><img src={img_redirect} alt='' /></a></div>
                      <div className='text'>
                         <div className='head1'>BANGKOK</div>
                         <div className='head2'>MAR 3</div>
@@ -193,7 +193,7 @@ const Meet = () => {
 
                     <div className='img-expand '>
                       <img src={img2} className="img-expand1"  onMouseOver={MouseOver}  alt='' />
-                      <div className='arrow'><a href=""><img src={img_redirect} alt='' /></a></div>
+                      <div className='arrow'><a href="/"><img src={img_redirect} alt='' /></a></div>
                       <div className='text'>
                         <div className='head1'>KUALA LUMPUR</div>
                         <div className='head2'>MAR 3</div>
@@ -202,7 +202,7 @@ const Meet = () => {
 
                     <div className='img-expand ' >
                       <img src={img3} className="img-expand1"  alt=''  onMouseOver={MouseOver} />
-                      <div className='arrow'><a href=""><img src={img_redirect} alt='' /></a></div>
+                      <div className='arrow'><a href="/"><img src={img_redirect} alt='' /></a></div>
                       <div className='text'  onMouseOver={MouseOver} >
                         <div className='head1'>JAKARTA</div>
                         <div className='head2'>MAR 3</div>
