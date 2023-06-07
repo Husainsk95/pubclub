@@ -1,0 +1,41 @@
+.advisory-section{
+    margin-top: 130px;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+
+}
+.advisory-section .mt-para{
+margin-top: -15px;
+}
+
+.advisory-section .advsection-heading{
+    font-family: 'Clash Display';
+font-style: normal;
+font-weight: 600;
+font-size: 26px;
+line-height: 32px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #122051;
+}
+.advisory-section .advsection-subheading{
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #BEBEBE;
+}
+.advisory-section .advsection-para{
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 26px;
+    /* or 124% */
+    color: #122051;
+    padding-top: 30px;
+    
+}

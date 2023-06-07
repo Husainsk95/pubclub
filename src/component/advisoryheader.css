@@ -1,0 +1,37 @@
+.advisory-council{
+    background-image: url(../images/advisorycouncil.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.advisory-council .advisory-heading{
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 118px;
+    text-align: center;
+    color: #122051;
+    
+    
+}
+/* padding to advisory */
+.advisory-council .advisory{
+    padding-top: 550px;
+    padding-bottom: 300px;
+}
+.advisory-council .council-para{
+    font-family: 'Gotham';
+font-style: normal;
+font-weight: 700;
+font-size: 21px;
+line-height: 30px;
+/* or 140% */
+
+text-align: center;
+
+color: #122051;
+
+}
+.advisory-council .second-para{
+    margin-top: -10px;
+}

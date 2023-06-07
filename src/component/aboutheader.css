@@ -1,0 +1,59 @@
+.about-header {
+    background-image: url('../images/headerbg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-header .about-subheader {
+    padding-top: 300px;
+    padding-bottom: 200px;
+}
+
+.about-header .about-heading {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 118px;
+    /* identical to box height */
+    text-align: center;
+    color: #BEBEBE;
+padding: 0px 30px;
+}
+
+.about-header .about-para {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 32px;
+    /* or 150% */
+    padding-top: 38px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+.about-header .about-para2{
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 2px;
+    /* or 150% */
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+.about-header .text-slide {
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: content-box;
+    transform-origin: center;
+    padding:0px 0px;
+    height: 110px;
+    display: flex;
+    margin: auto;
+    /* object-fit: cover; */
+}

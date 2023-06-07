@@ -1,0 +1,45 @@
+/* Exclusive club Benefits */
+
+.exclusiveclub p.numheading{
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 22px;
+    /* identical to box height, or 105% */
+    
+    text-transform: uppercase;
+    
+    color: #122051;
+    
+  
+  }
+  .exclusivebenefit h3.heading {
+    /* padding: 0% 0 0 5%; */
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    letter-spacing: 0.04em;
+    color:#122051;
+    padding-top: 80px;
+}
+.exclusivebenefit{
+    margin-bottom: 120px;
+    padding-bottom: 30px;
+}
+  .exclusiveclub p.exclusive-para{
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 28px;
+    /* or 133% */
+    text-transform: lowercase;
+    color: #122051;
+    margin-top: -10px;
+  }
+  .exclusiveclub .para-margin{
+    margin-top: 90px;
+  }

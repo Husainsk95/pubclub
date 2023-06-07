@@ -1,0 +1,49 @@
+ .benefit-section .benefit-section-para {
+     font-family: 'Gotham';
+     font-style: normal;
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 19px;
+
+     color: #122051;
+     padding: 0px 250px 30px 101px;
+     margin-left: 60px;
+     margin-right: 20px;
+
+ }
+
+ /* benefit-blog-section  */
+ .benefit-blog-section {
+     background: rgba(217, 217, 217, 0.5);
+ }
+
+ .benefit-blog-section .blogheading {
+     font-family: 'Clash Display';
+     font-style: normal;
+     font-weight: 600;
+     font-size: 48px;
+     line-height: 59px;
+
+     color: #122051;
+
+ }
+
+ .benefit-blog-section .viewbtn {
+     font-family: 'Gotham';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 21px;
+     line-height: 26px;
+     text-decoration-line: underline;
+     text-decoration-color:#D9D9D980; ;
+     
+     float:right;
+     margin-top: 10px;
+     color: #122051;
+ }
+
+ .benefit-blog-section .blog-section-div{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+ }

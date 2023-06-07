@@ -1,0 +1,90 @@
+.contactform-section input, .contactform-section select {
+    position: relative;
+    background:#D9D9D9;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    height: 83px;
+    border-radius: 15px;
+    /* color: rgba(18, 32, 81, 0.3); */
+    color: rgb(33 37 41 / 60%);
+    padding-left: 30px;
+}
+
+.contactform-section .country-box {
+    position: relative;
+}
+
+/* .contactform-section select {
+    position: relative;
+} */
+
+.contactform-section .country-box::after {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    content: "";
+    z-index: 2;
+    width: 0px;
+    height: 0;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 18px solid #BEBEBE;
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.contactform-section .country-box.select::after {
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+
+/* .contactform-section select::after {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    content: "";
+    z-index: 2;
+    width: 0px;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-left: 18px solid #BEBEBE;
+    transform: translateY(-50%) rotate(90deg);
+} */
+
+.contactform-section textarea {
+
+    background:#D9D9D9;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    border-radius: 15px;
+    color: rgba(18, 32, 81, 0.3);
+    padding-left: 30px;
+}
+
+
+.contactform-section input:focus ,
+.contactform-section textarea:focus, 
+.contactform-section select:focus {
+    border-color:#D9D9D9;
+    box-shadow: none;
+}
+
+
+.contactform-section .applynow-btn {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #122051;
+
+ 
+}

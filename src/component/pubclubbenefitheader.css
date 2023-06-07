@@ -1,0 +1,43 @@
+.pubclub-benefit{
+    background-image: url('../images/headerbg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pubclub-benefit .benefit-heading{
+    font-family: 'Clash Display';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 59px;
+text-align: center;
+letter-spacing: 0.01em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+.pubclub-benefit .pubclub-image{
+  margin-top: 240px;
+ margin-bottom: 50px;
+   width: 95%;
+   height: 330px;
+}
+.pubclub-benefit .pubclub-benefit-para{
+    font-family: 'Gotham';
+font-style: normal;
+font-weight: 700;
+font-size: 21px;
+line-height: 26px;
+text-align: center;
+
+color: #BEBEBE;
+
+}
+.pubclub-benefit .sideimg,.pubclub-benefit .sideimg2{
+margin-top: 360px;
+}
+.pubclub-benefit .sideimg2{
+    padding-left: 50px;
+}
+.pubclub-benefit .sideimg{
+    padding-left: 20px;
+}

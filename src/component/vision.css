@@ -1,0 +1,115 @@
+.col-md-6.left-side.col {
+    /* padding: 0% 0 0 5%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.vision-section .left-side .vision h3 {
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 118px;
+    letter-spacing: 0.02em;
+    color: #BEBEBE;
+}
+
+.vision-section .left-side p {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+    color: #122051;
+    max-width: 650px;
+}
+
+.col-md-6.right-side {
+    text-align: center;
+}
+
+
+
+
+
+/* For 480 Resolution */  
+@media only screen  and (min-device-width : 320px) and (max-device-width : 640px)  { 
+
+
+    .vision-section .mobile-flex .vision {
+        transform: translateY(50px);
+    }
+
+    .vision-section .mobile-flex .vision h3 {
+        font-family: 'Clash Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 39px;
+        letter-spacing: 0.02em;
+        color: #BEBEBE;
+    }
+
+    .vision-section .mobile-flex .vision h3 span img {
+        height: 11px;
+        width: 23px;
+        margin: 0px 2px;
+    }
+
+    .vision-section .mobile-flex .content-box img {
+        width: 75%;
+        margin: auto;
+    }
+
+
+    .vision-section .left-side p {
+
+        font-family: 'Gotham';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #122051;
+    }
+} 
+
+
+/* For 640 Resolution */  
+@media only screen and (min-device-width : 481px) and (max-device-width : 640px)  {
+
+
+}  
+
+
+/* For 1024 Resolution */  
+@media only screen   
+and (min-device-width : 768px)   
+and (max-device-width : 1024px)  
+{ /* STYLES GO HERE */} 
+
+@media  (min-width: 1030px)  and (max-width: 1370px)  
+{ 
+  
+
+}  
+
+
+@media only screen  and (min-width: 1371px)  and (max-width: 1605px)  
+{  
+   
+}  
+
+
+@media only screen  and (min-width: 1680px) and (max-width: 1919px)  
+{ 
+
+   
+}  
+
+@media only screen  and (min-width: 1920px) {
+
+
+
+} 

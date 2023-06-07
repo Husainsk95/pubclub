@@ -1,0 +1,13 @@
+
+
+
+.d-flex.member-images {
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #BEBEBE;
+}
+
+
+.d-flex.member-images img {
+    height: 100%;
+}
