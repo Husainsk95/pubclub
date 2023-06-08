@@ -18,18 +18,23 @@ const Aboutheader = () => {
           </Row>
         </Container> */}
         <Container fluid className='about-subheader'>
-         <Row>
-         {/* <img src={headleft} alt='left-capsule' /> */}
-         <div className='text-slide'>
-                <div className='mt-4 pt-2'><img src={headleft} alt='left-capsule' /></div>  
-                   <h3 className='text-slide-box about-heading'>ABOUT PUBCLUB</h3>
-                <div className='mt-4 pt-2'><img src={headright} alt='right-capsule' /></div>   
-                </div>
-          {/* <h1 className='about-heading'>ABOUT PUBCLUB</h1> */}
-          {/* <img src={headright} alt='right-capsule' /> */}
-          <p className='about-para'>PubClub is bringing the next gen of publishers and content creators,</p>
-          <p className='about-para2'> empowering them to be at the forefront in emerging markets.</p>
-         </Row>
+          <Row>
+            {/* <img src={headleft} alt='left-capsule' /> */}
+            <div className='text-slide mobileview'>
+              <div className='mt-4 pt-2 capsuleleft'><img src={headleft} alt='left-capsule' /></div>
+              <h3 className='text-slide-box about-heading'>ABOUT PUBCLUB</h3>
+              <div className='mt-4 pt-2 capsuleright'><img src={headright} alt='right-capsule' /></div>
+            </div>
+            {/* <h1 className='about-heading'>ABOUT PUBCLUB</h1> */}
+            {/* <img src={headright} alt='right-capsule' /> */}
+            <p className='about-para desktopviewpara'>PubClub is bringing the next gen of publishers and content creators,<br/>
+            empowering them to be at the forefront in emerging markets.
+            </p>
+            <p className='about-para mobileviewpara'>PubClub is bringing the next gen of publishers and content creators,
+            empowering them to be at the forefront in emerging markets.
+            </p>
+            {/* <p className='about-para2'> empowering them to be at the forefront in emerging markets.</p> */}
+          </Row>
         </Container>
       </section>
     </>

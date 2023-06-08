@@ -16,6 +16,16 @@
     letter-spacing: 0.04em;
     color:#122051;
 }
+/* For 640 Resolution */  
+/* @media only screen and (min-device-width : 481px) and (max-device-width : 640px)  {
+
+  .hovertab-section .mobile-view-img .tabimg img{
+  width: 90% !important;
+} */
+
+  /* .hovertab-section .mobile-view-img .tabimg img{
+  width: 90% !important;
+}  */
 
 
 .tablinks {

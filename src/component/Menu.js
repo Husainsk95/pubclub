@@ -34,6 +34,7 @@ export const Menu = () => {
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                     <Nav className="justify-content-end gap-md-5 flex-grow-1 pe-3">
+                        {/* <NavLink to="memberbenefits">MEMBER BENEFITS</NavLink> */}
                         <NavLink to="about">ABOUT</NavLink>
                         <NavLink to="memberbenefits">MEMBER BENEFITS</NavLink>
                         <NavDropdown 

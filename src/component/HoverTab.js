@@ -1,5 +1,6 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { Row, Col, Container } from 'react-bootstrap';
+import './hovertab.css'
 
 // import tabimg1 from '../images/event.webp';
 // import tabhoverimg1 from '../images/event-hover.webp';
@@ -17,7 +18,7 @@ import './hovertab.css'
 const HoverTab = (props) => {
 
     const [activeTab, setActiveTab] = useState("tab1");
-    
+
     // const data = [
     //     {
     //         "id":1,
@@ -49,23 +50,23 @@ const HoverTab = (props) => {
     const data = props.data;
 
 
-   
 
 
-  return (
-    <>
 
-        <section className='hovertab-section' >
-            <Container fluid className= {props.class !== undefined ? `px-5p desktop ${props.class}` : "px-5p desktop"} >
-             <h3 className="heading">{props.title !== "" ? props.title : ""} </h3>
-                <Row className=''>
+    return (
+        <>
 
-                <Col className='col-md-6 left-side'>
-                  <div className="hover-tabs tab">
-                     
+            <section className='hovertab-section' >
+                <Container fluid className={props.class !== undefined ? `px-5p desktop ${props.class}` : "px-5p desktop"} >
+                    <h3 className="heading">{props.title !== "" ? props.title : ""} </h3>
+                    <Row className=''>
+
+                        <Col className='col-md-6 left-side'>
+                            <div className="hover-tabs tab">
 
 
-                    {/* {data.map((d,i) => (    
+
+                                {/* {data.map((d,i) => (    
                     
         
                         // <div className= {activeTab === d.tabname ? "tablinks active" : "tablinks"} onMouseOver={()=>{setActiveTab(d.tabname)}}>
@@ -95,24 +96,25 @@ const HoverTab = (props) => {
                     
                     ))}       */}
 
-                            { data.map((d) => {
-                                return (
-                                    <>
-                                    <div key={d.id} className= {activeTab === d.tabname ? "tablinks active" : "tablinks"} onMouseOver={()=>{setActiveTab(d.tabname)}}>
-                                        <div className="d-flex tab-box ">
-                                            <div className=" tabimg py-4">
-                                                {activeTab === d.tabname ? <img src={d.tabhoverimg} alt="..." /> : <img src={d.tabimg} alt="..." /> }
+                                {data.map((d) => {
+                                    return (
+                                        <>
+                                            <div key={d.id} className={activeTab === d.tabname ? "tablinks active" : "tablinks"} onMouseOver={() => { setActiveTab(d.tabname) }}>
+                                                <div className="d-flex tab-box ">
+                                                    <div className=" tabimg py-4">
+                                                        {activeTab === d.tabname ? <img src={d.tabhoverimg} alt="..." /> : <img src={d.tabimg} alt="..." />}
+                                                    </div>
+                                                    <div className="tab-text py-4 ms-5">
+                                                        <h3 className='tab-heading'>{d.tabheading}</h3>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div className="tab-text py-4 ms-5">
-                                                <h3 className='tab-heading'>{d.tabheading}</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </>
-                                 )})
-                              }
+                                        </>
+                                    )
+                                })
+                                }
 
-                        {/* <div className= {activeTab === "London" ? "tablinks active" : "tablinks"} onMouseOver={()=>{setActiveTab('London')}}>
+                                {/* <div className= {activeTab === "London" ? "tablinks active" : "tablinks"} onMouseOver={()=>{setActiveTab('London')}}>
                             <div className="d-flex tab-box ">
                                 <div className=" tabimg py-4">
                                     {activeTab === "London" ? <img src={tabhoverimg1} alt="..." /> : <img src={tabimg1} alt="..." /> }
@@ -147,15 +149,15 @@ const HoverTab = (props) => {
                                 </div>
                             </div>
                         </div> */}
-                    </div>
-                        
-                </Col>
+                            </div>
 
-                <Col className='col-md-6 right-side'>
+                        </Col>
 
-                       
-                    <div className='content-box'>
-{/* 
+                        <Col className='col-md-6 right-side'>
+
+
+                            <div className='content-box'>
+                                {/* 
                         {data.map((d,i) => (    
                             <div className={activeTab === d.tabname ? "tabcontent active" : "tabcontent"}>
                                 <img src={d.tabcontentimg} alt="..." />
@@ -163,17 +165,18 @@ const HoverTab = (props) => {
                         
                         ))}  */}
 
-                         { data.map((d) => {
-                            return (
-                             <>
-                                <div key={d.id} className={activeTab === d.tabname ? "tabcontent active" : "tabcontent"}>
-                                   <img src={d.tabcontentimg} alt="..." />
-                                </div>
-                             </>
-                            )})
-                        }
+                                {data.map((d) => {
+                                    return (
+                                        <>
+                                            <div key={d.id} className={activeTab === d.tabname ? "tabcontent active" : "tabcontent"}>
+                                                <img src={d.tabcontentimg} alt="..." />
+                                            </div>
+                                        </>
+                                    )
+                                })
+                                }
 
-                        {/* <div className={activeTab === "London" ? "tabcontent active" : "tabcontent"}>
+                                {/* <div className={activeTab === "London" ? "tabcontent active" : "tabcontent"}>
                             <img src={tabcontentimg1} alt="..." />
                         </div>
 
@@ -184,147 +187,91 @@ const HoverTab = (props) => {
                         <div  className={activeTab === "Tokyo" ? "tabcontent active" : "tabcontent"}>
                              <img src={tabcontentimg3} alt="..." />
                         </div>  */}
-                    </div> 
-                </Col>
+                            </div>
+                        </Col>
 
-                        
+
                     </Row>
 
                     {/* {props.button !== undefined ? <img src={d.tabhoverimg} alt="..." /> : <img src={d.tabimg} alt="..." /> } */}
-                                     
-                     { props.button !== undefined ? <div className='text-center'><a href="apply-to-join"><button className="applynow-btn" >APPLY TO JOIN </button></a></div> : ""}       
-                    
+
+                    {props.button !== undefined ? <div className='text-center'><a href="apply-to-join"><button className="applynow-btn" >APPLY TO JOIN </button></a></div> : ""}
+
                 </Container>
 
                 {/* memberbenefits */}
-                <Container fluid className={props.class === "memberbenefits" ? `px-5p mobile ${props.class}` : "px-5p d-none" } >
-                <h3 className="heading">{props.title !== "" ? props.title : ""} </h3>
-                <Row className=''>
-                    
-
-                { data.map((d) => {
-                    return (
-                    <>
-                      <Col className='col-md-11 mx-auto py-5'>
-                        <div className={activeTab === d.tabname ? "active" : ""}>
-                             <img src={d.tabcontentimg} alt="..." />
-                        </div>
-                      </Col>
-                    </>
-                    )})
-                }
-        
+                <Container fluid className={props.class === "memberbenefits" ? `px-5p mobile ${props.class}` : "px-5p d-none"} >
+                    <h3 className="heading">{props.title !== "" ? props.title : ""} </h3>
+                    <Row className=''>
 
 
-                    <Col className='col-md-12'>
-
-
-                        
-
-                    { data.map((d) => {
-                        return (
-                        <>
-                        {/* <div className= {activeTab === d.tabname ? "tablinks active" : "tablinks"} onMouseOver={()=>{setActiveTab(d.tabname)}}>
-                            <div className="d-flex tab-box ">
-                            <div className=" tabimg py-4">
-                                {activeTab === d.tabname ? <img src={d.tabhoverimg} alt="..." /> : <img src={d.tabimg} alt="..." /> }
-                            </div>
-                            <div className="tab-text py-4 ms-5">
-                                <h3 className='tab-heading'>{d.tabheading}</h3>
-                            </div>
-                            </div>
-                        </div> */}
-                        </>
-                        )})
-                    }
-
-                    { data.map((d) => {
-                        return (
-                            <>
-                            {/* <div className={activeTab === d.tabname ? "tabcontent active" : "tabcontent"}>
-                            <img src={d.tabcontentimg} alt="..." />
-                            </div> */}
-                            </>
-                            )})
+                        {data.map((d) => {
+                            return (
+                                <>
+                                    <Col className='col-md-11 mx-auto py-5'>
+                                        <div className="">
+                                            <img src={d.tabcontentimg} alt="..." />
+                                        </div>
+                                    </Col>
+                                </>
+                            )
+                        })
                         }
 
 
-                            
-                    </Col>
 
- 
-                        
                     </Row>
 
                     {/* {props.button !== undefined ? <img src={d.tabhoverimg} alt="..." /> : <img src={d.tabimg} alt="..." /> } */}
-                                     
-                     { props.button !== undefined ? <div className='text-center'><a href="apply-to-join"><button className="applynow-btn" >APPLY TO JOIN </button></a></div> : ""}       
-                    
-                    </Container>
 
-                    {/* ex-memberbenefits */}
-                    <Container fluid className= {props.class === "ex-memberbenefits" ? `px-5p mobile ${props.class}` : "px-5p d-none" } >
-                <h3 className="heading">{props.title !== "" ? props.title : ""} </h3>
+                    {props.button !== undefined ? <div className='text-center'><a href="apply-to-join"><button className="applynow-btn" >APPLY TO JOIN </button></a></div> : ""}
+
+                </Container>
+
+                {/* ex-memberbenefits */}
+                <Container fluid className={props.class === "ex-memberbenefits" ? `px-5p mobile ${props.class}` : "px-5p d-none"} >
+                    <h3 className="heading">{props.title !== "" ? props.title : ""} </h3>
                     <Row className=''>
 
-                    <Col className='col-md-6 left-side'>
-                    <div className="hover-tabs tab">
-                    
-                                { data.map((d) => {
+                        <Col className='col-md-11 mx-auto left-side'>
+                            <div className="hover-tabs tab">
+
+                                {data.map((d) => {
                                     return (
                                         <>
-                                        <div className= {activeTab === d.tabname ? "tablinks active" : "tablinks"} onMouseOver={()=>{setActiveTab(d.tabname)}}>
-                                        <div className="d-flex tab-box ">
-                                            <div className=" tabimg py-4">
-                                                {activeTab === d.tabname ? <img src={d.tabhoverimg} alt="..." /> : <img src={d.tabimg} alt="..." /> }
+                                            <div className="mobile-view-img" >
+                                                <div className="d-flex tab-box ">
+                                                    <div className="tabimg py-4">
+                                                        {activeTab === d.tabname ? <img src={d.tabhoverimg} alt="..." /> : <img src={d.tabimg} alt="..." />}
+                                                    </div>
+                                                    <div className="tab-text py-4 ms-5">
+                                                        <h3 className='tab-heading'>{d.tabheading}</h3>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div className="tab-text py-4 ms-5">
-                                                <h3 className='tab-heading'>{d.tabheading}</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </>
-                                    )})
+                                        </>
+                                    )
+                                })
                                 }
 
-                        
-                        </div>
-                            
-                    </Col>
 
-                    <Col className='col-md-6 right-side'>
+                            </div>
 
-                        
-                        <div className='content-box'>
+                        </Col>
 
 
-                            { data.map((d) => {
-                                return (
-                                <>
-                                    <div className={activeTab === d.tabname ? "tabcontent active" : "tabcontent"}>
-                                    <img src={d.tabcontentimg} alt="..." />
-                                    </div>
-                                </>
-                                )})
-                            }
-
-                        
-                        </div> 
-                    </Col>
-
-                            
-                        </Row>
-
-                                        
-                        { props.button !== undefined ? <div className='text-center'><a href="apply-to-join"><button className="applynow-btn" >APPLY TO JOIN </button></a></div> : ""}       
-                        
-                    </Container>
+                    </Row>
 
 
-                             
-        </section>
+                    {props.button !== undefined ? <div className='text-center'><a href="apply-to-join"><button className="applynow-btn" >APPLY TO JOIN </button></a></div> : ""}
 
-    
+                </Container>
+
+
+
+            </section>
+
+
             {/* <div>HoverTab</div>
             
         <div className="hover-tabs tab">
@@ -347,9 +294,9 @@ const HoverTab = (props) => {
         <h3>Tokyo</h3>
         <p>Tokyo is the capital of Japan.</p>
         </div> */}
-    </>
-    
-  )
+        </>
+
+    )
 }
 
 export default HoverTab
