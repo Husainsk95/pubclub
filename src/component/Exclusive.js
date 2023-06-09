@@ -13,7 +13,7 @@ const Exclusive = () => {
    <>
    <section className='exclusivebenefit'>
      {/* EXCLUSIVE CLUB BENEFITS Container starts here */}
-     <Container fluid className='px-5p mt-5'>
+     <Container fluid className='px-5p mt-5 desktop-view'>
                     <h3 className="heading">EXCLUSIVE CLUB BENEFITS</h3>
                     <Row className='mt-5 pt-5'>
                         <Col className='col-md-6'>
@@ -102,6 +102,14 @@ const Exclusive = () => {
 
                         </Col>
                     </Row>
+                </Container>
+                <Container className='mobile-view'>
+                    <Row>
+                        <Col>
+                        
+                        </Col>
+                    </Row>
+
                 </Container>
    </section>
    </>

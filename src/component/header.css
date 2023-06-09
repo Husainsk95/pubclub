@@ -3,7 +3,7 @@ header.header-home {
     height: 100%;
     min-height: 100vh;
     background: linear-gradient(187deg, rgba(0, 0, 0, 1) 5.67%, rgba(0, 0, 0, 0.488542) 25.88%, rgba(0, 0, 0, 0) 60.38%); 
-    background: url('../images/headerbg.webp') no-repeat top left;
+    background: url('../images/home-bg.webp') no-repeat top left;
     background-size: cover;
 }
 

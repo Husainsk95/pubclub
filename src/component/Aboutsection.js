@@ -133,7 +133,7 @@ const Aboutsection = () => {
             <div className='mb-5 pb-5 text-center'>
               <div className='Carouselsection'>
                 <Carousel variant="dark">
-                  <Carousel.Item>
+                  <Carousel.Item interval={1000}>
                     <img
                       className="d-block"
                       src={img8}
@@ -141,7 +141,7 @@ const Aboutsection = () => {
                     />
 
                   </Carousel.Item>
-                  <Carousel.Item>
+                  <Carousel.Item interval={1000}>
                     <img
                       className="d-block"
                       src={img9}
@@ -149,7 +149,7 @@ const Aboutsection = () => {
                     />
 
                   </Carousel.Item>
-                  <Carousel.Item>
+                  <Carousel.Item interval={1000}>
                     <img
                       className="d-block"
                       src={img10}

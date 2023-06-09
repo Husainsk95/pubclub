@@ -28,11 +28,6 @@
 .col-md-6.right-side {
     text-align: center;
 }
-
-
-
-
-
 /* For 480 Resolution */  
 @media only screen  and (min-device-width : 320px) and (max-device-width : 640px)  { 
 

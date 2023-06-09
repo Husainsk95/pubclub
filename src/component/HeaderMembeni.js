@@ -6,26 +6,26 @@ import headright from '../images/head-right.webp';
 
 const HeaderMembeni = () => {
   return (
-    
-    <header className='header-membeni'  > 
 
-    <Container fluid className='hero px-5'>
-      {/* <Menu /> */}
-        
+    <header className='header-membeni'  >
+
+      <Container fluid className='hero px-5'>
+        {/* <Menu /> */}
+
         <div className='hero-content'>
-            
-            <div className='hero-text'>
-                <div className='text-slider'>
-                  <img src={headleft} alt='left-capsule' />
-                   <div className='text-slide-box'><h3 className="text-slide">MEMBER BENEFITS </h3></div>
-                   <img src={headright} alt='right-capsule' />
-                </div>
-                <p>Inspiring xx+ publishers and content creators to lead<br /> the Ad Tech landscape with nuanced approaches</p>
+
+          <div className='hero-text'>
+            <div className='text-slider mobile-view'>
+              <img src={headleft} className='capsuleleft' alt='left-capsule' />
+              <div className='text-slide-box'><h3 className="text-slide">MEMBER BENEFITS </h3></div>
+              <img src={headright} className='capsuleright' alt='right-capsule' />
             </div>
+            <p className='mobile-view-para'>Inspiring xx+ publishers and content creators to lead<br /> the Ad Tech landscape with nuanced approaches</p>
+          </div>
         </div>
-    
-     </Container>
- 
+
+      </Container>
+
     </header>
 
   )

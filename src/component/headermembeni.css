@@ -114,15 +114,49 @@ header.header-membeni .text-slider img {
 
 
 /* For 480 Resolution */  
-@media only screen  and (min-device-width : 320px) and (max-device-width : 480px)  { 
-    header.header-membeni .hero-text h2 {
-        font-size: 28px;
+@media only screen  and (min-device-width : 320px) and (max-device-width : 780px)  { 
+    header.header-membeni .hero-text h3 {
+        font-size: 25px;
         line-height: 28px;
+        /* margin-bottom: -400px; */
     }
 
-    header.header-membeni .hero-text h3 {
-        font-size: 30px;
-        line-height: 37px;
+    header.header-membeni .hero-text .text-slide {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 28px;
+        
+    }
+    /* .header-membeni .hero-te{
+margin-bottom: -180px;
+    } */
+    .header-membeni .mobile-view img{
+        width: 14px !important;
+        height: 19px !important;
+        margin-top: -90px !important;
+        padding-top: -10px; 
+    }
+ .hero-text .mobile-view-para{
+      display: none !important;
+      
+       
+    }
+    .header-membeni .hero-content{
+        padding-bottom: -40px !important;
+        margin-bottom: -80px !important;
+        padding-top: -100px;
+
+    }
+    /* header.header-membeni .hero{
+    min-height: 100px !important;
+    } */
+    .header-membeni .capsuleleft{
+        margin-right: -15px !important;
+        /* padding-right: 20px !important;  */
+    
+    }
+    .header-membeni .capsuleright{
+        margin-left: -15px !important;
     }
 } 
 

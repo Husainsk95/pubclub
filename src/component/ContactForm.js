@@ -310,7 +310,7 @@ const ContactForm = () => {
     <>  
       
     <section id="contactForm" className='contactform-section' >
-        <Container fluid className='px-5p py-5'>
+        <Container fluid className='px-5p' bg="transparent">
 
           {/* {CountryCode} */}
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Row, Col, Container } from 'react-bootstrap';
-import './hovertab.css'
+
 
 // import tabimg1 from '../images/event.webp';
 // import tabhoverimg1 from '../images/event-hover.webp';
@@ -105,7 +105,7 @@ const HoverTab = (props) => {
                                                         {activeTab === d.tabname ? <img src={d.tabhoverimg} alt="..." /> : <img src={d.tabimg} alt="..." />}
                                                     </div>
                                                     <div className="tab-text py-4 ms-5">
-                                                        <h3 className='tab-heading'>{d.tabheading}</h3>
+                                                        <h3 className='tab-heading pb-2'>{d.tabheading}</h3>
                                                     </div>
                                                 </div>
                                             </div>
@@ -208,9 +208,12 @@ const HoverTab = (props) => {
                         {data.map((d) => {
                             return (
                                 <>
-                                    <Col className='col-md-11 mx-auto py-5'>
-                                        <div className="">
-                                            <img src={d.tabcontentimg} alt="..." />
+                                    <Col className='col-md-12 mx-auto py-4'>
+                                        <div className="mobile-view text-center">
+                                           <div className='pb-4 borderbottom'>
+                                           <img src={d.tabcontentimg} alt="..." />
+                                            <h3 className='imgheading'>NETWORK WITH INDUSTRY PIONEERS</h3>
+                                           </div>
                                         </div>
                                     </Col>
                                 </>
@@ -230,21 +233,21 @@ const HoverTab = (props) => {
 
                 {/* ex-memberbenefits */}
                 <Container fluid className={props.class === "ex-memberbenefits" ? `px-5p mobile ${props.class}` : "px-5p d-none"} >
-                    <h3 className="heading">{props.title !== "" ? props.title : ""} </h3>
+                    <h3 className="heading mobile-view-heading">{props.title !== "" ? props.title : ""} </h3>
                     <Row className=''>
 
-                        <Col className='col-md-11 mx-auto left-side'>
+                        <Col className='mx-auto left-side'>
                             <div className="hover-tabs tab">
 
                                 {data.map((d) => {
                                     return (
                                         <>
-                                            <div className="mobile-view-img" >
-                                                <div className="d-flex tab-box ">
+                                            <div className="" >
+                                                <div className="text-center">
                                                     <div className="tabimg py-4">
-                                                        {activeTab === d.tabname ? <img src={d.tabhoverimg} alt="..." /> : <img src={d.tabimg} alt="..." />}
+                                                        {activeTab === d.tabname ? <img src={d.tabhoverimg} alt="..." /> : <img src={d.tabhoverimg} alt="..." />}
                                                     </div>
-                                                    <div className="tab-text py-4 ms-5">
+                                                    <div className="tab-text py-4">
                                                         <h3 className='tab-heading'>{d.tabheading}</h3>
                                                     </div>
                                                 </div>

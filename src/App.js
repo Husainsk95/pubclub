@@ -48,7 +48,7 @@ function App() {
           <Route path="memberbenefits" element={ <MemberBenefits />} exact  />
           <Route path="single" element={ <PubclubBenefit />} exact  /> 
 
-          <Route path="advisorycounciling" element={ <AdvisoryCouncil />} exact  />
+          <Route path="advisorycouncil" element={ <AdvisoryCouncil />} exact  />
           
           <Route path="applytojoin" element={ <Contact />} exact  />
           {/* <Route path="*" element={<>Members</>} /> */}

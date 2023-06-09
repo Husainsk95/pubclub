@@ -175,7 +175,7 @@ const Meet = () => {
     <Container fluid className='px-5p'>
         <Row className=''>
             <Col className='col-md-6'>
-                <h3 className="heading">PUBCLUB  MEETS</h3>
+                <h3 className="heading mobile-view-heading">PUBCLUB  MEETS</h3>
             </Col>
 
             <Col className='col-md-6'>

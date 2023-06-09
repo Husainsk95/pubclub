@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./menu.css"
 
 import brandlogo from "../images/Brand Logo.webp";
@@ -13,6 +13,28 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 export const Menu = () => {
     let expand = 'md';
     let homeurl = "/";
+    // const [show, setShow] = useState(false);
+    // const handleClose = () => setShow(false);
+    // const handleShow = () => setShow(true);
+  
+    // const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+    // const handleMouseEnter = () => {
+    //     setIsDropdownOpen(true);
+    //   };
+    
+    //   const handleMouseLeave = () => {
+    //     setIsDropdownOpen(false);
+    //   };
+
+
+    const [show, setShow] = useState(false);
+    const showDropdown = (e)=>{
+        setShow(!show);
+    }
+    const hideDropdown = e => {
+        setShow(false);
+    }
 
   return (
     <>
@@ -29,11 +51,11 @@ export const Menu = () => {
             >
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                        <NavLink to={homeurl} ><img src={brandlogo} alt='Brand Logo' /></NavLink>
+                        <NavLink to={homeurl} className="mobile-view-img"><img src={brandlogo} alt='Brand Logo' /></NavLink>
                     </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                    <Nav className="justify-content-end gap-md-5 flex-grow-1 pe-3">
+                    <Nav className="justify-content-end gap-md-5 flex-grow-1 pe-3 mobilebiew">
                         {/* <NavLink to="memberbenefits">MEMBER BENEFITS</NavLink> */}
                         <NavLink to="about">ABOUT</NavLink>
                         <NavLink to="memberbenefits">MEMBER BENEFITS</NavLink>
@@ -41,8 +63,11 @@ export const Menu = () => {
                             className='desktop communitymargin'
                             title="COMMUNITY"
                             id={`offcanvasNavbarDropdown-expand-${expand}`}
+                        show={show}
+                        onMouseEnter={showDropdown} 
+                        onMouseLeave={hideDropdown}    
                         >
-                            <NavDropdown.Item > <NavLink to="advisorycounciling">ADVISORY COUNCIL</NavLink></NavDropdown.Item>
+                            <NavDropdown.Item> <NavLink to="advisorycouncil">ADVISORY COUNCIL</NavLink></NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item ><NavLink to="members">MEMBERS</NavLink></NavDropdown.Item>
                         </NavDropdown>

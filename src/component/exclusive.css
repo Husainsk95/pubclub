@@ -43,3 +43,30 @@
   .exclusiveclub .para-margin{
     margin-top: 90px;
   }
+
+  /* For 480 Resolution */  
+@media only screen  and (min-device-width : 320px) and (max-device-width : 640px)  { 
+/* .exclusivebenefit .desktop-view{
+  display: none;
+} */
+/* .exclusivebenefit .para-margin{
+  text-align: left;
+   margin-left: -40px; 
+  
+   margin-top: 60px;
+}
+.exclusivebenefit .numheading,.exclusivebenefit .exclusive-para{
+  font-weight: 700 !important;
+font-size: 14px !important;
+line-height: 15px !important;
+} */
+
+}
+
+@media  (min-width: 1030px)  and (max-width: 1670px)  
+{ 
+  .exclusivebenefit .mobile-view{
+    display: none;
+  }
+
+} 

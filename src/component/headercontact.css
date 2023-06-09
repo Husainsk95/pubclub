@@ -5,6 +5,9 @@ header.contact-header {
     background: linear-gradient(187deg, rgba(0, 0, 0, 1) 5.67%, rgba(0, 0, 0, 0.488542) 25.88%, rgba(0, 0, 0, 0) 60.38%); 
     background: url('../images/header-contact.webp') no-repeat top left;
     background-size: cover;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 35px;
 }
 
 
